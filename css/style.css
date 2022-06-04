@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* Start About Header And Nav  */
+
+.logo {
+    color: rgb(28 2 2);;
+}
+header {
+    background-image: url('/img/background-nav-wall.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    margin: -8px; 
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+    padding-top: 20px;
+}
+.navBar h3 {
+    margin: 0px 50px;
+}
+
+.navigationUL {
+    list-style: none;
+    margin: 0px 5px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.nav-item a {
+    margin: 0px 10px;
+    padding: 0px 10px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(28 2 2);
+    transition: transform 1s ease-out;
+}
+.home .myName {
+    margin: -40px 0px;
+}
+.goTop {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid black;
+    background: #722c2c;
+    border-radius: 5px;
+    padding: 7px 9px;
+    font-size: 15px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 5;
+    transition: 2s ease all;
+
+}
+/* End About Header And Nav  */
+/* Start About Main */ 
+/* Start About About */
+.about {
+    background: #FFCC8F;
+    margin: -20px -8px;
+    height: 400px;
+    background-color: #cf8d6b;
+}
+.about .headerAbout {
+    text-align: center;
+    padding: 20px 0px;
+    text-decoration: underline;
+}
+.about .pargraphAbout {
+    text-align: center;
+    padding: 70px 0px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* End About About */
+/* Start About My Projects */
+.myProjects {
+    background-color: #ffa29a;
+    margin: -20px -8px ;
+}
+.headerMyProjects {
+    text-align: center;
+    padding: 20px 0px;
+    text-decoration: underline;
+}
+.myProjects p {
+    text-align: center;
+}
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+.card {
+    margin: 50px 20px;
+    padding: 90px 140px;
+    border-radius: 25px;
+    position: relative;
+    background-image: url('/img/projects.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overlay .text {
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    max-width: 160px;
+    color: rgb(44, 6, 1);
+}
+.text p {
+    font-size: 19px;
+}
+.overlay .text .visit {
+    padding: 10px 0px;
+    margin: 20px 0px;
+    border-radius: 20px;
+    border: 1px solid rgb(44, 6, 1);
+    background-color: transparent;
+    color: rgb(44, 6, 1);
+    text-decoration: none;
+}
+
+.overlay {
+    opacity: 0;
+    transition: .5s ease;
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    height: 200px;
+    width: 285px;
+    background-color: rgb(207 141 107);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+    transition: 1s;
+} 
+.text .visit:hover {
+    background-color:rgb(44, 6, 1);
+    color: #fff;
+    border: none;
+}
+.card img {
+    width: 5px;
+}
+/* End About My Projects */
+/* Start About Links */
+.links {
+    background: #f7e7e6;
+    margin: -20px -8px;
+}
+.links ul {
+    margin: 0px 0px 35px;
+    padding-bottom: 30px;
+}
+.linksUl li {
+    font-size: 20px;
+    padding-top: 3px;
+}
+.headerLinks {
+    text-align: center;
+    padding: 20px 0px;
+    text-decoration: underline;
+}
+.linksUl a {
+    text-decoration: none;
+}
+/* End About Links */
+/* Start About Contact */
+.contact {
+    margin: 10px ;
+}
+.contact form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contact label {
+    padding: 10px;
+    margin: 10px;
+    font-size: 23px;
+}
+.contact input , .contact textarea {
+    box-shadow: 0px 0px 10px 0px;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 9px;
+    padding: 13px 13px;
+    outline: none;
+}
+textarea {
+    padding: 23px !important;
+}
+.contact button {
+    margin: 30px 0;
+    padding: 15px 61px;
+    font-size: 15px;
+    box-shadow: 0px 0px 8px 1px;
+    border-radius: 12px;
+    border: 0px;
+    color: #030332;
+}
+.contact button:hover {
+    cursor: pointer;
+}
+/* End About Contact */
+/* End About Main */
+/* Start About Footer */
+.footer {
+    margin: 20px -8px -9px -8px;
+    height: 100px;
+    text-align: center;
+    font-size: 35px;
+    background-color: #fadbb5;
+}
+.footer a {
+    text-decoration: none;
+}
+.footer i {
+    padding: 30px;
+    color: #000;
+}
+/* End About Footer */
