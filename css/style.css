@@ -116,7 +116,7 @@ header {
     padding: 90px 140px;
     border-radius: 25px;
     position: relative;
-    background-image: url('/img/projects.jpg');
+    background-image: url('../img/projects.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -131,11 +131,11 @@ header {
     color: rgb(44, 6, 1);
 }
 .text p {
-    font-size: 19px;
+    font-size: 17px;
 }
 .overlay .text .visit {
     padding: 10px 0px;
-    margin: 20px 0px;
+    margin: 20px 8px;
     border-radius: 20px;
     border: 1px solid rgb(44, 6, 1);
     background-color: transparent;
@@ -164,9 +164,6 @@ header {
     background-color:rgb(44, 6, 1);
     color: #fff;
     border: none;
-}
-.card img {
-    width: 5px;
 }
 /* End About My Projects */
 /* Start About Links */
@@ -246,3 +243,37 @@ textarea {
     color: #000;
 }
 /* End About Footer */
+
+/* Start About Media Querey */
+@media screen and (max-width: 500px) {
+    .navigationUL li {
+        display: none;
+    }
+    .goTop {
+        right: 50px;
+    }
+    .myName h1 {
+        font-size: 80px;
+    }
+    .pargraphAbout {
+        width: 380px;
+        padding: 15px 0px !important;
+    }
+    .myProjects {
+        max-width: 480px;
+    }
+    .myProjects p {
+        max-width: 400px;
+    }
+    .cards {
+        display: block;
+    }
+    .card {
+        height: 200px;
+        width: 285px;
+    }
+    .linksUl li {
+        width: 400px;
+    }
+}
+/* End About Media Querey */
